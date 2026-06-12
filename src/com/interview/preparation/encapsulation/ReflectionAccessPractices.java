@@ -28,6 +28,15 @@ public class ReflectionAccessPractices {
             fieldMethod.setAccessible(true);
 
             System.out.println("Invoked method value is : "+fieldMethod.invoke(enc));
+
+            /*
+            I can not access others code like java internal code by using reflection,
+            Class<?> longCache = Class.forName("java.lang.Long$LongCache");
+            Field cacheField = longCache.getDeclaredField("cache");
+             // This line WILL CRASH in Java 25!
+            cacheField.setAccessible(true);
+            */
+
          //   System.out.println("Get method value is : "+fieldMethod.invoke(enc,));
         } catch (NoSuchFieldException e) {
             throw new RuntimeException(e);
