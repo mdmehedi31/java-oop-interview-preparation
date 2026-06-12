@@ -14,4 +14,8 @@ public class Encapsulation {
   this.salary = salary;
  }
 
+
+ private int get2XAge() {
+  return age*2;
+ }
 }
