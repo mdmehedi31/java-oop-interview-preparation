@@ -1,6 +1,10 @@
 package com.interview.preparation.encapsulation;
 
-public class Encapsulation {
+public class Encapsulation /*
+ extends Person
+ We can not inherit the Person class here , cause person class is final,
+ so any final class not allow to extend
+ */{
 
  private int age;
  private long salary;
