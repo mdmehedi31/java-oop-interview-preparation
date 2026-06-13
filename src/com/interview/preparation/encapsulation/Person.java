@@ -1,6 +1,6 @@
 package com.interview.preparation.encapsulation;
 
-public  class  Person {
+public final class  Person extends User {
 
 
     private final int age;
@@ -35,4 +35,15 @@ public  class  Person {
     public void setNumber(int number) {
         this.number = number;
     }
+
+   /*
+    Here, We are trying to override the method, from the user class,
+    but we can not do this, cause this method is final in the Super class(User)
+    @Override
+    public String updateUserDetails(String updateDetails){
+
+    }
+    */
+
+
 }
